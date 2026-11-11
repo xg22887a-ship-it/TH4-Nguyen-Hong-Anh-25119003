@@ -1,0 +1,205 @@
+05:19:38 ets Jul 29 2019 12:21:46
+05:19:38 
+05:19:38 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+05:19:38 configsip: 0, SPIWP:0xee
+05:19:38 clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+05:19:38 mode:DIO, clock div:1
+05:19:38 load:0x3fff0030,len:4876
+05:19:38 ho 0 tail 12 room 4
+05:19:38 load:0x40078000,len:16532
+05:19:38 load:0x40080400,len:3500
+05:19:38 entry 0x400805b4
+05:19:38 AHT20 (0x38) OK
+05:19:38 BMP280 (0x77) OK
+05:19:38 Dang noi vao miu diềm
+05:19:39 .
+05:19:39 .
+05:19:40 .
+05:19:40 .
+05:19:41 .
+05:19:41 IP: 192.168.0.101
+05:19:41 Noi broker test.mosquitto.org, client id esp32-25119003-63daf380 ...
+05:19:41 OK
+05:19:41 Da subscribe aet2022/25119003/cmd/led
+05:19:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.1,"pres_hPa":1020,"uptime":3,"rssi":-24,"led":0}
+05:19:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.3,"pres_hPa":1020,"uptime":5,"rssi":-24,"led":0}
+05:19:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.2,"pres_hPa":1020,"uptime":7,"rssi":-24,"led":0}
+05:19:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.2,"pres_hPa":1020,"uptime":9,"rssi":-23,"led":0}
+05:19:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.5,"pres_hPa":1020,"uptime":11,"rssi":-28,"led":0}
+05:19:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":80.9,"pres_hPa":1020,"uptime":13,"rssi":-21,"led":0}
+05:19:52 Nhan [aet2022/25119003/cmd/led]: 1
+05:19:52 LED GPIO5 -> BAT
+05:19:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":81,"pres_hPa":1020,"uptime":15,"rssi":-20,"led":1}
+05:19:54 Nhan [aet2022/25119003/cmd/led]: 0
+05:19:54 LED GPIO5 -> TAT
+05:19:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":81.2,"pres_hPa":1020,"uptime":17,"rssi":-20,"led":0}
+05:19:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":81.5,"pres_hPa":1020,"uptime":19,"rssi":-20,"led":0}
+05:19:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":81.5,"pres_hPa":1020,"uptime":21,"rssi":-19,"led":0}
+05:20:01 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":81.4,"pres_hPa":1020,"uptime":23,"rssi":-20,"led":0}
+05:20:03 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":81.5,"pres_hPa":1020,"uptime":25,"rssi":-20,"led":0}
+05:20:05 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":81.2,"pres_hPa":1020,"uptime":27,"rssi":-20,"led":0}
+05:20:07 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":81,"pres_hPa":1020,"uptime":29,"rssi":-23,"led":0}
+05:20:09 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":80.9,"pres_hPa":1020,"uptime":31,"rssi":-19,"led":0}
+05:20:11 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":80.8,"pres_hPa":1020,"uptime":33,"rssi":-20,"led":0}
+05:20:13 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":80.7,"pres_hPa":1020,"uptime":35,"rssi":-20,"led":0}
+05:20:15 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81,"pres_hPa":1020,"uptime":37,"rssi":-20,"led":0}
+05:20:17 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.1,"pres_hPa":1020,"uptime":39,"rssi":-20,"led":0}
+05:20:19 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":81.3,"pres_hPa":1020,"uptime":41,"rssi":-20,"led":0}
+05:20:21 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.3,"pres_hPa":1020,"uptime":43,"rssi":-20,"led":0}
+05:20:23 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":81.3,"pres_hPa":1020,"uptime":45,"rssi":-20,"led":0}
+05:20:25 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.7,"pres_hPa":1020,"uptime":47,"rssi":-20,"led":0}
+05:20:27 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.6,"pres_hPa":1020,"uptime":49,"rssi":-20,"led":0}
+05:20:29 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":82,"pres_hPa":1020,"uptime":51,"rssi":-20,"led":0}
+05:20:31 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":82.1,"pres_hPa":1020,"uptime":53,"rssi":-19,"led":0}
+05:20:33 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.7,"pres_hPa":1020,"uptime":55,"rssi":-20,"led":0}
+05:20:35 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.8,"pres_hPa":1020,"uptime":57,"rssi":-19,"led":0}
+05:20:37 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":81.9,"pres_hPa":1020,"uptime":59,"rssi":-20,"led":0}
+05:20:39 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":82,"pres_hPa":1020,"uptime":61,"rssi":-19,"led":0}
+05:20:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":81.8,"pres_hPa":1020,"uptime":63,"rssi":-18,"led":0}
+05:20:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":82.1,"pres_hPa":1020,"uptime":65,"rssi":-20,"led":0}
+05:20:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":82.6,"pres_hPa":1020,"uptime":67,"rssi":-32,"led":0}
+05:20:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":82.8,"pres_hPa":1020,"uptime":69,"rssi":-24,"led":0}
+05:20:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":82.6,"pres_hPa":1020,"uptime":71,"rssi":-32,"led":0}
+05:20:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":82.5,"pres_hPa":1020,"uptime":73,"rssi":-26,"led":0}
+05:20:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":82,"pres_hPa":1020,"uptime":75,"rssi":-34,"led":0}
+05:20:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":81.6,"pres_hPa":1020,"uptime":77,"rssi":-35,"led":0}
+05:20:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":81.3,"pres_hPa":1020,"uptime":79,"rssi":-20,"led":0}
+05:20:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":80.8,"pres_hPa":1020,"uptime":81,"rssi":-31,"led":0}
+05:21:01 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":80.4,"pres_hPa":1020,"uptime":83,"rssi":-23,"led":0}
+05:21:03 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":80.9,"pres_hPa":1020,"uptime":85,"rssi":-27,"led":0}
+05:21:05 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":80.5,"pres_hPa":1020,"uptime":87,"rssi":-46,"led":0}
+05:21:07 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":80.3,"pres_hPa":1020,"uptime":89,"rssi":-44,"led":0}
+05:21:09 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":80,"pres_hPa":1020,"uptime":91,"rssi":-47,"led":0}
+05:21:11 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":79.8,"pres_hPa":1020,"uptime":93,"rssi":-40,"led":0}
+05:21:13 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":79.6,"pres_hPa":1020,"uptime":95,"rssi":-14,"led":0}
+05:21:15 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":79.5,"pres_hPa":1020,"uptime":97,"rssi":-40,"led":0}
+05:21:17 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":79.5,"pres_hPa":1019.9,"uptime":99,"rssi":-44,"led":0}
+05:21:19 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":79.6,"pres_hPa":1020,"uptime":101,"rssi":-19,"led":0}
+05:21:21 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.5,"hum":79.7,"pres_hPa":1020,"uptime":103,"rssi":-22,"led":0}
+05:21:23 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.5,"hum":79.7,"pres_hPa":1020,"uptime":105,"rssi":-14,"led":0}
+05:21:25 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":79.4,"pres_hPa":1020,"uptime":107,"rssi":-17,"led":0}
+05:21:27 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":79.4,"pres_hPa":1020,"uptime":109,"rssi":-19,"led":0}
+05:21:29 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":79.3,"pres_hPa":1020,"uptime":111,"rssi":-18,"led":0}
+05:21:31 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":79.3,"pres_hPa":1020,"uptime":113,"rssi":-22,"led":0}
+05:21:33 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":79.1,"pres_hPa":1020,"uptime":115,"rssi":-25,"led":0}
+05:21:35 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":79,"pres_hPa":1020,"uptime":117,"rssi":-20,"led":0}
+05:21:37 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":78.8,"pres_hPa":1020,"uptime":119,"rssi":-21,"led":0}
+05:21:39 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":78.9,"pres_hPa":1020,"uptime":121,"rssi":-32,"led":0}
+05:21:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":78.9,"pres_hPa":1020,"uptime":123,"rssi":-35,"led":0}
+05:21:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":79,"pres_hPa":1020,"uptime":125,"rssi":-40,"led":0}
+05:21:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":79.3,"pres_hPa":1020,"uptime":127,"rssi":-45,"led":0}
+05:21:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":79.7,"pres_hPa":1020,"uptime":129,"rssi":-37,"led":0}
+05:21:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":80.1,"pres_hPa":1020,"uptime":131,"rssi":-34,"led":0}
+05:21:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":80.4,"pres_hPa":1020,"uptime":133,"rssi":-22,"led":0}
+05:21:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":80.5,"pres_hPa":1020,"uptime":135,"rssi":-23,"led":0}
+05:21:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":80.3,"pres_hPa":1020,"uptime":137,"rssi":-20,"led":0}
+05:21:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.9,"pres_hPa":1020,"uptime":139,"rssi":-17,"led":0}
+05:21:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.5,"pres_hPa":1020,"uptime":141,"rssi":-21,"led":0}
+05:22:01 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.4,"pres_hPa":1020,"uptime":143,"rssi":-24,"led":0}
+05:22:03 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.6,"pres_hPa":1020,"uptime":145,"rssi":-22,"led":0}
+05:22:05 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":79.7,"pres_hPa":1020,"uptime":147,"rssi":-25,"led":0}
+05:22:07 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":79.5,"pres_hPa":1020,"uptime":149,"rssi":-32,"led":0}
+05:22:09 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.1,"pres_hPa":1020,"uptime":151,"rssi":-23,"led":0}
+05:22:11 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":78.9,"pres_hPa":1020,"uptime":153,"rssi":-20,"led":0}
+05:22:13 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":78.8,"pres_hPa":1020,"uptime":155,"rssi":-18,"led":0}
+05:22:15 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":79.3,"pres_hPa":1020,"uptime":157,"rssi":-21,"led":0}
+05:22:17 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":79.5,"pres_hPa":1020,"uptime":159,"rssi":-34,"led":0}
+05:22:19 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.2,"hum":79.6,"pres_hPa":1020,"uptime":161,"rssi":-24,"led":0}
+05:22:21 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.4,"hum":79.8,"pres_hPa":1020,"uptime":163,"rssi":-43,"led":0}
+05:22:23 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.5,"hum":79.3,"pres_hPa":1019.9,"uptime":165,"rssi":-17,"led":0}
+05:22:25 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.5,"hum":78.9,"pres_hPa":1019.9,"uptime":167,"rssi":-43,"led":0}
+05:22:27 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.5,"hum":78.4,"pres_hPa":1019.9,"uptime":169,"rssi":-17,"led":0}
+05:22:29 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.4,"hum":78,"pres_hPa":1020,"uptime":171,"rssi":-21,"led":0}
+05:22:31 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.3,"hum":77.6,"pres_hPa":1020,"uptime":173,"rssi":-23,"led":0}
+05:22:33 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.3,"hum":77.2,"pres_hPa":1020,"uptime":175,"rssi":-21,"led":0}
+05:22:35 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.2,"hum":77,"pres_hPa":1020,"uptime":177,"rssi":-20,"led":0}
+05:22:37 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.1,"hum":76.8,"pres_hPa":1020,"uptime":179,"rssi":-21,"led":0}
+05:22:39 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27.1,"hum":76.6,"pres_hPa":1020,"uptime":181,"rssi":-20,"led":0}
+05:22:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":27,"hum":76.4,"pres_hPa":1020,"uptime":183,"rssi":-19,"led":0}
+05:22:43 Nhan [aet2022/25119003/cmd/led]: 1
+05:22:43 LED GPIO5 -> BAT
+05:22:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.9,"hum":76.3,"pres_hPa":1020,"uptime":185,"rssi":-19,"led":1}
+05:22:45 Nhan [aet2022/25119003/cmd/led]: 0
+05:22:45 LED GPIO5 -> TAT
+05:22:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.8,"hum":76.2,"pres_hPa":1020,"uptime":187,"rssi":-19,"led":0}
+05:22:46 Nhan [aet2022/25119003/cmd/led]: 1
+05:22:46 LED GPIO5 -> BAT
+05:22:47 Nhan [aet2022/25119003/cmd/led]: 0
+05:22:47 LED GPIO5 -> TAT
+05:22:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.7,"hum":76.1,"pres_hPa":1020,"uptime":189,"rssi":-19,"led":0}
+05:22:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":76.1,"pres_hPa":1020,"uptime":191,"rssi":-20,"led":0}
+05:22:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.5,"hum":76.1,"pres_hPa":1020,"uptime":193,"rssi":-18,"led":0}
+05:22:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":76.2,"pres_hPa":1020,"uptime":195,"rssi":-18,"led":0}
+05:22:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":76.2,"pres_hPa":1020,"uptime":197,"rssi":-19,"led":0}
+05:22:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":76.2,"pres_hPa":1020,"uptime":199,"rssi":-20,"led":0}
+05:22:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.6,"hum":76.2,"pres_hPa":1020,"uptime":201,"rssi":-18,"led":0}
+05:23:01 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.5,"hum":76.2,"pres_hPa":1020,"uptime":203,"rssi":-19,"led":0}
+05:23:03 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.5,"hum":76.2,"pres_hPa":1020,"uptime":205,"rssi":-17,"led":0}
+05:23:05 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.4,"hum":76.2,"pres_hPa":1020,"uptime":207,"rssi":-18,"led":0}
+05:23:07 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.4,"hum":76.2,"pres_hPa":1020,"uptime":209,"rssi":-18,"led":0}
+05:23:09 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.4,"hum":76.3,"pres_hPa":1020,"uptime":211,"rssi":-18,"led":0}
+05:23:11 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.3,"pres_hPa":1020.1,"uptime":213,"rssi":-18,"led":0}
+05:23:13 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.4,"pres_hPa":1020,"uptime":215,"rssi":-18,"led":0}
+05:23:15 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.4,"pres_hPa":1020,"uptime":217,"rssi":-17,"led":0}
+05:23:17 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.4,"pres_hPa":1020,"uptime":219,"rssi":-18,"led":0}
+05:23:19 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.5,"pres_hPa":1020,"uptime":221,"rssi":-19,"led":0}
+05:23:21 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.5,"pres_hPa":1020,"uptime":223,"rssi":-18,"led":0}
+05:23:23 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.4,"hum":76.6,"pres_hPa":1020,"uptime":225,"rssi":-17,"led":0}
+05:23:25 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.4,"hum":76.6,"pres_hPa":1020,"uptime":227,"rssi":-18,"led":0}
+05:23:27 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.5,"pres_hPa":1020,"uptime":229,"rssi":-19,"led":0}
+05:23:29 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.3,"hum":76.5,"pres_hPa":1020,"uptime":231,"rssi":-20,"led":0}
+05:23:31 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.2,"hum":76.5,"pres_hPa":1020,"uptime":233,"rssi":-22,"led":0}
+05:23:33 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":76.6,"pres_hPa":1020,"uptime":235,"rssi":-17,"led":0}
+05:23:35 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26.1,"hum":76.6,"pres_hPa":1020,"uptime":237,"rssi":-21,"led":0}
+05:23:37 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":76.6,"pres_hPa":1020,"uptime":239,"rssi":-18,"led":0}
+05:23:39 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":76.8,"pres_hPa":1020,"uptime":241,"rssi":-18,"led":0}
+05:23:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":76.8,"pres_hPa":1020,"uptime":243,"rssi":-18,"led":0}
+05:23:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":76.9,"pres_hPa":1020,"uptime":245,"rssi":-16,"led":0}
+05:23:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":76.9,"pres_hPa":1020,"uptime":247,"rssi":-15,"led":0}
+05:23:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77,"pres_hPa":1020,"uptime":249,"rssi":-16,"led":0}
+05:23:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77,"pres_hPa":1020,"uptime":251,"rssi":-22,"led":0}
+05:23:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.1,"pres_hPa":1020.1,"uptime":253,"rssi":-18,"led":0}
+05:23:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.1,"pres_hPa":1020,"uptime":255,"rssi":-20,"led":0}
+05:23:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.1,"pres_hPa":1020,"uptime":257,"rssi":-18,"led":0}
+05:23:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.1,"pres_hPa":1020,"uptime":259,"rssi":-17,"led":0}
+05:23:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.2,"pres_hPa":1020,"uptime":261,"rssi":-19,"led":0}
+05:24:00 Nhan [aet2022/25119003/cmd/led]: 1
+05:24:00 LED GPIO5 -> BAT
+05:24:01 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.2,"pres_hPa":1020,"uptime":263,"rssi":-17,"led":1}
+05:24:03 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.3,"pres_hPa":1020,"uptime":265,"rssi":-17,"led":1}
+05:24:05 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.4,"pres_hPa":1020,"uptime":267,"rssi":-16,"led":1}
+05:24:06 Nhan [aet2022/25119003/cmd/led]: 0
+05:24:06 LED GPIO5 -> TAT
+05:24:07 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.5,"pres_hPa":1020,"uptime":269,"rssi":-17,"led":0}
+05:24:07 Nhan [aet2022/25119003/cmd/led]: 1
+05:24:07 LED GPIO5 -> BAT
+05:24:09 Nhan [aet2022/25119003/cmd/led]: 0
+05:24:09 LED GPIO5 -> TAT
+05:24:09 Nhan [aet2022/25119003/cmd/led]: 1
+05:24:09 LED GPIO5 -> BAT
+05:24:09 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.5,"pres_hPa":1020,"uptime":271,"rssi":-17,"led":1}
+05:24:11 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.5,"pres_hPa":1020,"uptime":273,"rssi":-17,"led":1}
+05:24:13 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":26,"hum":77.5,"pres_hPa":1020,"uptime":275,"rssi":-17,"led":1}
+05:24:15 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":277,"rssi":-17,"led":1}
+05:24:17 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.4,"pres_hPa":1020,"uptime":279,"rssi":-18,"led":1}
+05:24:19 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":281,"rssi":-18,"led":1}
+05:24:21 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":77.4,"pres_hPa":1020,"uptime":283,"rssi":-21,"led":1}
+05:24:23 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":77.5,"pres_hPa":1020,"uptime":285,"rssi":-19,"led":1}
+05:24:25 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":77.5,"pres_hPa":1020,"uptime":287,"rssi":-18,"led":1}
+05:24:27 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.6,"pres_hPa":1020,"uptime":289,"rssi":-18,"led":1}
+05:24:29 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":291,"rssi":-17,"led":1}
+05:24:31 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":293,"rssi":-17,"led":1}
+05:24:33 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":295,"rssi":-19,"led":1}
+05:24:35 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":297,"rssi":-17,"led":1}
+05:24:37 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.9,"hum":77.5,"pres_hPa":1020,"uptime":299,"rssi":-17,"led":1}
+05:24:39 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.8,"hum":77.5,"pres_hPa":1020,"uptime":301,"rssi":-18,"led":1}
+05:24:41 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.5,"pres_hPa":1020,"uptime":303,"rssi":-27,"led":1}
+05:24:43 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.4,"pres_hPa":1020,"uptime":305,"rssi":-37,"led":1}
+05:24:45 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.5,"pres_hPa":1020,"uptime":307,"rssi":-18,"led":1}
+05:24:47 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.5,"pres_hPa":1020,"uptime":309,"rssi":-19,"led":1}
+05:24:49 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.6,"pres_hPa":1020,"uptime":311,"rssi":-20,"led":1}
+05:24:51 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.6,"hum":77.6,"pres_hPa":1020,"uptime":313,"rssi":-22,"led":1}
+05:24:53 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.6,"hum":77.6,"pres_hPa":1020,"uptime":315,"rssi":-22,"led":1}
+05:24:55 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.6,"hum":77.7,"pres_hPa":1020,"uptime":317,"rssi":-21,"led":1}
+05:24:57 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.6,"hum":77.7,"pres_hPa":1020,"uptime":319,"rssi":-20,"led":1}
+05:24:59 Publish [aet2022/25119003/telemetry]: {"id":"25119003","temp":25.7,"hum":77.8,"pres_hPa":1020,"uptime":321,"rssi":-12,"led":1}
