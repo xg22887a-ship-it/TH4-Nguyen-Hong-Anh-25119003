@@ -1,0 +1,26 @@
+04:57:57 ets Jul 29 2019 12:21:46
+04:57:57
+04:57:57 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+04:57:57 configsip: 0, SPIWP:0xee
+04:57:57 clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,wp_drv:0x00
+04:57:57 mode:DIO, clock div:1
+04:57:57 load:0x3fff0030,len:4876
+04:57:57 ho 0 tail 12 room 4
+04:57:57 load:0x40078000,len:16532
+04:57:57 load:0x40080400,len:3500
+04:57:57 entry 0x400805b4
+04:57:58 AHT20 (0x38) OK
+04:57:58 BMP280 (0x77) OK
+04:57:58 Dang noi vao miu diềm
+04:57:59 .
+04:57:59 .
+04:58:00 .
+04:58:00 .
+04:58:00 IP: 192.168.0.101
+04:58:00 REST server cong 80: GET /api/sensor
+04:58:09 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":25.5,"hum":78.6,"pres_hPa":1019.9,"uptime":11,"rssi":-24,"ip":"192.168.0.101"}
+04:58:51 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":25.6,"hum":78.3,"pres_hPa":1019.9,"uptime":53,"rssi":-46,"ip":"192.168.0.101"}
+04:59:09 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":28.5,"hum":85.1,"pres_hPa":1019.8,"uptime":71,"rssi":-34,"ip":"192.168.0.101"}
+04:59:11 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":28.3,"hum":83.8,"pres_hPa":1019.9,"uptime":73,"rssi":-35,"ip":"192.168.0.101"}
+04:59:16 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":28.4,"hum":81.4,"pres_hPa":1019.9,"uptime":78,"rssi":-44,"ip":"192.168.0.101"}
+04:59:16 GET /api/sensor -> {"id":"25119003","nhom":"nhom3","temp":28.5,"hum":81.3,"pres_hPa":1019.9,"uptime":78,"rssi":-44,"ip":"192.168.0.101"}
