@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 117
+Connection: close
+
+{"id":"25119003","nhom":"nhom3","temp":25.5,"hum":78.6,"pres_hPa":1019.9,"uptime":11,"rssi":-24,"ip":"192.168.0.101"}
