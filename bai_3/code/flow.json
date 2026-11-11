@@ -1,0 +1,279 @@
+[
+ {
+  "id": "broker1",
+  "type": "mqtt-broker",
+  "name": "test.mosquitto.org",
+  "broker": "test.mosquitto.org",
+  "port": "1883",
+  "clientid": "nodered-25119003",
+  "autoConnect": true,
+  "usetls": false,
+  "protocolVersion": "4",
+  "keepalive": "60",
+  "cleansession": true
+ },
+ {
+  "id": "tab1",
+  "type": "ui_tab",
+  "name": "ESP32 25119003",
+  "icon": "dashboard",
+  "order": 1,
+  "disabled": false,
+  "hidden": false
+ },
+ {
+  "id": "grpSo",
+  "type": "ui_group",
+  "name": "Số đo",
+  "tab": "tab1",
+  "order": 1,
+  "disp": true,
+  "width": "6",
+  "collapse": false
+ },
+ {
+  "id": "grpDk",
+  "type": "ui_group",
+  "name": "Điều khiển LED (GPIO5)",
+  "tab": "tab1",
+  "order": 2,
+  "disp": true,
+  "width": "6",
+  "collapse": false
+ },
+ {
+  "id": "flow1",
+  "type": "tab",
+  "label": "TH4 Bai 3 - 25119003",
+  "disabled": false
+ },
+ {
+  "id": "mqttIn",
+  "type": "mqtt in",
+  "z": "flow1",
+  "name": "telemetry",
+  "topic": "aet2022/25119003/telemetry",
+  "qos": "0",
+  "datatype": "json",
+  "broker": "broker1",
+  "nl": false,
+  "rap": true,
+  "inputs": 0,
+  "x": 130,
+  "y": 120,
+  "wires": [
+   [
+    "tach"
+   ]
+  ]
+ },
+ {
+  "id": "tach",
+  "type": "function",
+  "z": "flow1",
+  "name": "tách trường",
+  "func": "const p = msg.payload;\nreturn [\n  {payload: p.temp, topic: 'Nhiệt độ (°C)'},\n  {payload: p.hum, topic: 'Độ ẩm (%)'},\n  {payload: p.led ? 1 : 0},\n  {payload: p.rssi}\n];",
+  "outputs": 4,
+  "x": 330,
+  "y": 120,
+  "wires": [
+   [
+    "gTemp",
+    "chart"
+   ],
+   [
+    "gHum",
+    "chart"
+   ],
+   [
+    "denLed"
+   ],
+   [
+    "songWifi"
+   ]
+  ]
+ },
+ {
+  "id": "gTemp",
+  "type": "ui_gauge",
+  "z": "flow1",
+  "name": "",
+  "group": "grpSo",
+  "order": 1,
+  "width": 3,
+  "height": 3,
+  "gtype": "gage",
+  "title": "Nhiệt độ",
+  "label": "°C",
+  "format": "{{value}}",
+  "min": 0,
+  "max": 50,
+  "colors": [
+   "#2a78d6",
+   "#1baf7a",
+   "#e34948"
+  ],
+  "x": 560,
+  "y": 60,
+  "wires": []
+ },
+ {
+  "id": "gHum",
+  "type": "ui_gauge",
+  "z": "flow1",
+  "name": "",
+  "group": "grpSo",
+  "order": 2,
+  "width": 3,
+  "height": 3,
+  "gtype": "gage",
+  "title": "Độ ẩm",
+  "label": "%",
+  "format": "{{value}}",
+  "min": 0,
+  "max": 100,
+  "colors": [
+   "#eda100",
+   "#1baf7a",
+   "#2a78d6"
+  ],
+  "x": 560,
+  "y": 100,
+  "wires": []
+ },
+ {
+  "id": "chart",
+  "type": "ui_chart",
+  "z": "flow1",
+  "name": "",
+  "group": "grpSo",
+  "order": 3,
+  "width": 6,
+  "height": 4,
+  "label": "Nhiệt độ & độ ẩm theo thời gian",
+  "chartType": "line",
+  "legend": "true",
+  "xformat": "HH:mm:ss",
+  "interpolate": "linear",
+  "nodata": "Chờ dữ liệu...",
+  "removeOlder": "5",
+  "removeOlderUnit": "60",
+  "removeOlderPoints": "",
+  "useOneColor": false,
+  "colors": [
+   "#e34948",
+   "#2a78d6",
+   "#1baf7a",
+   "#eda100",
+   "#6250d6",
+   "#008300",
+   "#e87ba4",
+   "#eb6834",
+   "#1baf7a"
+  ],
+  "x": 560,
+  "y": 140,
+  "wires": [
+   []
+  ]
+ },
+ {
+  "id": "btnOn",
+  "type": "ui_button",
+  "z": "flow1",
+  "name": "",
+  "group": "grpDk",
+  "order": 2,
+  "width": 3,
+  "height": 1,
+  "label": "BẬT LED",
+  "bgcolor": "#1baf7a",
+  "color": "#ffffff",
+  "payload": "1",
+  "payloadType": "str",
+  "topic": "",
+  "x": 130,
+  "y": 300,
+  "wires": [
+   [
+    "mqttOut"
+   ]
+  ]
+ },
+ {
+  "id": "btnOff",
+  "type": "ui_button",
+  "z": "flow1",
+  "name": "",
+  "group": "grpDk",
+  "order": 3,
+  "width": 3,
+  "height": 1,
+  "label": "TẮT LED",
+  "bgcolor": "#52514e",
+  "color": "#ffffff",
+  "payload": "0",
+  "payloadType": "str",
+  "topic": "",
+  "x": 130,
+  "y": 340,
+  "wires": [
+   [
+    "mqttOut"
+   ]
+  ]
+ },
+ {
+  "id": "mqttOut",
+  "type": "mqtt out",
+  "z": "flow1",
+  "name": "cmd/led",
+  "topic": "aet2022/25119003/cmd/led",
+  "qos": "0",
+  "retain": "false",
+  "broker": "broker1",
+  "x": 340,
+  "y": 320,
+  "wires": []
+ },
+ {
+  "id": "denLed",
+  "type": "ui_template",
+  "z": "flow1",
+  "group": "grpDk",
+  "name": "Đèn LED ảo (tự thêm)",
+  "order": 1,
+  "width": 6,
+  "height": 2,
+  "format": "<div style=\"display:flex;align-items:center;justify-content:center;gap:20px;padding:8px 0\">\n  <div ng-style=\"{'width':'72px','height':'72px','border-radius':'50%','transition':'all .3s',\n    'background': msg.payload ? 'radial-gradient(circle at 35% 35%,#fffde7,#ffd54f 45%,#f9a825 80%)' : 'radial-gradient(circle at 35% 35%,#757575,#424242 70%)',\n    'box-shadow': msg.payload ? '0 0 28px 10px rgba(255,213,79,.85)' : 'inset 0 0 8px rgba(0,0,0,.6)'}\"></div>\n  <div style=\"font-size:20px;font-weight:bold\">{{ msg.payload ? 'LED ĐANG BẬT' : 'LED ĐANG TẮT' }}</div>\n</div>",
+  "storeOutMessages": true,
+  "fwdInMessages": false,
+  "resendOnRefresh": true,
+  "templateScope": "local",
+  "x": 580,
+  "y": 200,
+  "wires": [
+   []
+  ]
+ },
+ {
+  "id": "songWifi",
+  "type": "ui_template",
+  "z": "flow1",
+  "group": "grpSo",
+  "name": "Sóng WiFi RSSI (tự thêm)",
+  "order": 4,
+  "width": 6,
+  "height": 2,
+  "format": "<div style=\"display:flex;align-items:flex-end;justify-content:center;gap:18px;padding:6px 0\">\n  <div style=\"display:flex;align-items:flex-end;gap:5px;height:56px\">\n    <div ng-repeat=\"i in [1,2,3,4]\" ng-style=\"{'width':'14px','height':(i*14)+'px','border-radius':'3px','transition':'background .3s',\n      'background': i <= (msg.payload >= -55 ? 4 : msg.payload >= -67 ? 3 : msg.payload >= -75 ? 2 : msg.payload >= -85 ? 1 : 0)\n        ? (msg.payload >= -67 ? '#1baf7a' : msg.payload >= -75 ? '#eda100' : '#e34948') : '#9e9e9e55'}\"></div>\n  </div>\n  <div style=\"text-align:left\">\n    <div style=\"font-size:20px;font-weight:bold\">{{msg.payload}} dBm</div>\n    <div style=\"opacity:.75\">{{ msg.payload >= -55 ? 'Rất mạnh' : msg.payload >= -67 ? 'Mạnh' : msg.payload >= -75 ? 'Trung bình' : msg.payload >= -85 ? 'Yếu' : 'Rất yếu' }}</div>\n  </div>\n</div>",
+  "storeOutMessages": true,
+  "fwdInMessages": false,
+  "resendOnRefresh": true,
+  "templateScope": "local",
+  "x": 590,
+  "y": 240,
+  "wires": [
+   []
+  ]
+ }
+]
